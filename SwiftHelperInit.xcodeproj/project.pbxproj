@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F247C282EA7AFCB00F2F79C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F247C272EA7AFCB00F2F79C /* UIImageView+Extension.swift */; };
+		1F247C2A2EA7B1D000F2F79C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F247C292EA7B1D000F2F79C /* UIButton+Extension.swift */; };
+		1F247C2C2EA7B25700F2F79C /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F247C2B2EA7B25700F2F79C /* UIStackView+Extension.swift */; };
 		1FC6E22F2EA1344100805A4B /* SwiftHelperInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC6E22E2EA1344100805A4B /* SwiftHelperInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FC6E2372EA1360D00805A4B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6E2362EA1360D00805A4B /* UILabel+Extension.swift */; };
 		1FC6E2392EA13A8D00805A4B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC6E2382EA13A8D00805A4B /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F247C272EA7AFCB00F2F79C /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1F247C292EA7B1D000F2F79C /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		1F247C2B2EA7B25700F2F79C /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		1FC6E22B2EA1344100805A4B /* SwiftHelperInit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftHelperInit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC6E22E2EA1344100805A4B /* SwiftHelperInit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftHelperInit.h; sourceTree = "<group>"; };
 		1FC6E2362EA1360D00805A4B /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 			children = (
 				1FC6E2362EA1360D00805A4B /* UILabel+Extension.swift */,
 				1FC6E2382EA13A8D00805A4B /* UIView+Extension.swift */,
+				1F247C272EA7AFCB00F2F79C /* UIImageView+Extension.swift */,
+				1F247C292EA7B1D000F2F79C /* UIButton+Extension.swift */,
+				1F247C2B2EA7B25700F2F79C /* UIStackView+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -144,7 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F247C282EA7AFCB00F2F79C /* UIImageView+Extension.swift in Sources */,
+				1F247C2A2EA7B1D000F2F79C /* UIButton+Extension.swift in Sources */,
 				1FC6E2392EA13A8D00805A4B /* UIView+Extension.swift in Sources */,
+				1F247C2C2EA7B25700F2F79C /* UIStackView+Extension.swift in Sources */,
 				1FC6E2372EA1360D00805A4B /* UILabel+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,22 @@
 import UIKit
 
 extension UIView {
+    
+    convenience init(width: CGFloat){
+        self.init()
+        self.constrainWidth(width)
+    }
+    
+    convenience init(height: CGFloat){
+        self.init()
+        self.constrainHeight(height)
+    }
+    
+    convenience init(width: CGFloat,height: CGFloat){
+        self.init(width: width)
+        self.constrainHeight(height)
+    }
+    
     func addSubViewWithConstraints(_ view: UIView,top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
         self.addSubview(view)
         view.anchor(top: top, leading: leading, bottom: bottom, trailing: trailing,padding: padding,size: size)
