@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIStackView{
+public extension UIStackView{
     
     convenience init(subViews: [UIView], axis: NSLayoutConstraint.Axis = .horizontal, spacing: CGFloat  = 0) {
         self.init(arrangedSubviews: subViews)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIImageView{
+public extension UIImageView{
     
     convenience init(named: String, contentMode: UIView.ContentMode){
         self.init(image: UIImage(named: named))

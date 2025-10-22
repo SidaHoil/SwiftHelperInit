@@ -7,24 +7,24 @@
 
 import UIKit
 
-struct ButtonStyle{
+public struct ButtonStyle{
     var textColor: UIColor
     var backgroundColor: UIColor
     var font: UIFont
 }
 
-struct CornerStyle {
+public struct CornerStyle {
     var radius: CGFloat
     var color: UIColor
     var width: CGFloat
 }
-struct ButtonTarget{
+public struct ButtonTarget{
     var target: Any
     var action: Selector
     var controlEvents: UIControl.Event = .touchUpInside
 }
 //font
-extension UIButton {
+public extension UIButton {
     convenience init(title: String) {
         self.init(type: .system)
         setTitle(title, for: .normal)

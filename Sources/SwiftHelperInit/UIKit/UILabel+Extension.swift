@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UILabel{
+public extension UILabel{
     
     convenience init(text: String) {
         self.init()
