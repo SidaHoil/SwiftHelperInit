@@ -17,6 +17,11 @@ public struct CornerStyle {
     public var radius: CGFloat
     public var color: UIColor
     public var width: CGFloat
+    public init(radius: CGFloat, color: UIColor, width: CGFloat) {
+        self.radius = radius
+        self.color = color
+        self.width = width
+    }
 }
 public struct ButtonTarget{
     public var target: Any
