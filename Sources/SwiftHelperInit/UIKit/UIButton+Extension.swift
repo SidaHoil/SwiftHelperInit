@@ -8,20 +8,20 @@
 import UIKit
 
 public struct ButtonStyle{
-    var textColor: UIColor
-    var backgroundColor: UIColor
-    var font: UIFont
+    public var textColor: UIColor
+    public var backgroundColor: UIColor
+    public var font: UIFont
 }
 
 public struct CornerStyle {
-    var radius: CGFloat
-    var color: UIColor
-    var width: CGFloat
+    public var radius: CGFloat
+    public var color: UIColor
+    public var width: CGFloat
 }
 public struct ButtonTarget{
-    var target: Any
-    var action: Selector
-    var controlEvents: UIControl.Event = .touchUpInside
+    public var target: Any
+    public var action: Selector
+    public var controlEvents: UIControl.Event = .touchUpInside
 }
 //font
 public extension UIButton {
