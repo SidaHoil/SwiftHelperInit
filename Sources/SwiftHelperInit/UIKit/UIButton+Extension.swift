@@ -23,6 +23,7 @@ public struct CornerStyle {
     public var radius: CGFloat
     public var color: UIColor
     public var width: CGFloat
+    
     public init(radius: CGFloat, color: UIColor, width: CGFloat) {
         self.radius = radius
         self.color = color
@@ -33,6 +34,13 @@ public struct ButtonTarget{
     public var target: Any
     public var action: Selector
     public var controlEvents: UIControl.Event = .touchUpInside
+
+    public init(target: Any, action: Selector, controlEvents: UIControl.Event = .touchUpInside) {
+        self.target = target
+        self.action = action
+        self.controlEvents =  controlEvents
+    }
+    
 }
 //font
 public extension UIButton {
