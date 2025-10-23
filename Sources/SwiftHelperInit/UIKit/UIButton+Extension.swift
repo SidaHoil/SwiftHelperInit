@@ -10,7 +10,13 @@ import UIKit
 public struct ButtonStyle{
     public var textColor: UIColor
     public var backgroundColor: UIColor
-    public var font: UIFont
+    public var font: UIFont?
+    
+    public init(textColor: UIColor, backgroundColor: UIColor, font: UIFont? = nil) {
+        self.textColor = textColor
+        self.backgroundColor = backgroundColor
+        self.font = font
+    }
 }
 
 public struct CornerStyle {
@@ -34,13 +40,13 @@ public extension UIButton {
         self.init(type: .system)
         setTitle(title, for: .normal)
     }
-    convenience init(title: String, font: UIFont) {
+    convenience init(title: String, font: UIFont?) {
         self.init(type: .system)
         setTitle(title, for: .normal)
         self.titleLabel?.font = font
     }
     
-    convenience init(title: String, font: UIFont, onTap: ButtonTarget) {
+    convenience init(title: String, font: UIFont?, onTap: ButtonTarget) {
         self.init(title: title, font: font)
         self.addTarget(onTap.target, action: onTap.action, for: onTap.controlEvents)
     }
