@@ -18,7 +18,13 @@ public extension UIImageView{
         self.init(image: image)
         self.contentMode = contentMode
     }
-
+    
+    func addTarget(target: Any, action: Selector)  {
+        let gesture = UITapGestureRecognizer(target: target, action: action)
+        self.isUserInteractionEnabled = true
+        self.addGestureRecognizer(gesture)
+    }
+    
     func loadImage(from: String, placeholder: UIImage? = nil) {
         self.image = placeholder
         guard let url = URL(string: from) else { return }
