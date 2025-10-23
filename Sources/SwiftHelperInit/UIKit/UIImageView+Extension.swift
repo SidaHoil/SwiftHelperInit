@@ -14,7 +14,7 @@ public extension UIImageView{
         self.contentMode = contentMode
     }
 
-    convenience init(image: UIImage, contentMode: UIView.ContentMode){
+    convenience init(image: UIImage?, contentMode: UIView.ContentMode){
         self.init(image: image)
         self.contentMode = contentMode
     }
