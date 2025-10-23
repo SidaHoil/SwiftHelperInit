@@ -14,6 +14,11 @@ public extension UIImageView{
         self.contentMode = contentMode
     }
 
+    convenience init(image: UIImage, contentMode: UIView.ContentMode){
+        self.init(image: image)
+        self.contentMode = contentMode
+    }
+
     func loadImage(from: String, placeholder: UIImage? = nil) {
         self.image = placeholder
         guard let url = URL(string: from) else { return }
