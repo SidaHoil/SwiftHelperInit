@@ -23,6 +23,21 @@ public extension UIView {
         self.init(width: width)
         self.constrainHeight(height)
     }
+
+    func addShadow(
+        color: UIColor = .black,
+        opacity: Float = 0.2,
+        offset: CGSize = .init(width: 0, height: 3),
+        radius: CGFloat = 6,
+        cornerRadius: CGFloat = 8
+    ) {
+        self.layer.cornerRadius = cornerRadius
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOpacity = opacity
+        self.layer.shadowOffset = offset
+        self.layer.shadowRadius = radius
+        self.layer.masksToBounds = false
+    }
     
     func addSubViewWithConstraints(_ view: UIView,top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
         self.addSubview(view)
