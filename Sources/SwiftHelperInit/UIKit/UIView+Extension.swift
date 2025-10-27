@@ -24,6 +24,14 @@ public extension UIView {
         self.constrainHeight(height)
     }
 
+    convenience init(style: CornerStyle){
+        self.init()
+        self.clipsToBounds = true
+        self.layer.cornerRadius = style.radius
+        self.layer.borderColor = style.color.cgColor
+        self.layer.borderWidth = style.width
+    }
+    
     func addShadow(
         color: UIColor = .black,
         opacity: Float = 0.2,
