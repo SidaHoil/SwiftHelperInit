@@ -64,6 +64,13 @@ public extension UIButton {
         setTitleColor(style.textColor, for: .normal)
         self.backgroundColor = style.backgroundColor
     }
+
+    convenience init(title: String, style: ButtonStyle, height: CGFloat, onTap: ButtonTarget) {
+        self.init(title: title, font: style.font, onTap: onTap)
+        setTitleColor(style.textColor, for: .normal)
+        self.backgroundColor = style.backgroundColor
+        self.constrainHeight(height)
+    }
     
     convenience init(title: String, style: ButtonStyle, corner: CornerStyle, height: CGFloat, onTap: ButtonTarget) {
         self.init(title: title, style: style, onTap: onTap)
