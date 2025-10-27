@@ -58,6 +58,12 @@ public extension UIButton {
         self.init(title: title, font: font)
         self.addTarget(onTap.target, action: onTap.action, for: onTap.controlEvents)
     }
+
+    convenience init(title: String, font: UIFont?, height: CGFloat, onTap: ButtonTarget) {
+        self.init(title: title, font: font)
+        self.addTarget(onTap.target, action: onTap.action, for: onTap.controlEvents)
+         self.constrainHeight(height)
+    }
     
     convenience init(title: String, style: ButtonStyle, onTap: ButtonTarget) {
         self.init(title: title, font: style.font, onTap: onTap)
