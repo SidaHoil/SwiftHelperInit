@@ -9,15 +9,15 @@ import UIKit
 
 public extension UIEdgeInsets{
     
-    init(vertical: CGFloat) {
+    convenience init(vertical: CGFloat) {
         self.init(top: vertical, left: 0, bottom: vertical, right: 0)
     }
     
-    init(horizontal: CGFloat) {
+    convenience init(horizontal: CGFloat) {
         self.init(top: 0, left: horizontal, bottom: 0, right: horizontal)
     }
     
-    init(all: CGFloat){
+    convenience init(all: CGFloat){
         self.init(top: all, left: all, bottom: all, right: all)
     }
 }
